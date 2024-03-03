@@ -172,19 +172,19 @@ namespace Hourglass.Managers
                     "Loud beep",
                     Resources.SoundManagerLoudBeep,
                     () => Resources.BeepLoud,
-                    TimeSpan.FromMilliseconds(600)),
+                    TimeSpan.FromMilliseconds(2000)),
 
                 new Sound(
                     "Normal beep",
                     Resources.SoundManagerNormalBeep,
                     () => Resources.BeepNormal,
-                    TimeSpan.FromMilliseconds(600)),
+                    TimeSpan.FromMilliseconds(2000)),
 
                 new Sound(
                     "Quiet beep",
                     Resources.SoundManagerQuietBeep,
                     () => Resources.BeepQuiet,
-                    TimeSpan.FromMilliseconds(600))
+                    TimeSpan.FromMilliseconds(2000))
             };
         }
 

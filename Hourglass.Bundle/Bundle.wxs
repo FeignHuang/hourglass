@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
      xmlns:bal="http://schemas.microsoft.com/wix/BalExtension">
   <Bundle Name="Hourglass"
           Version="1.15.0.0"
@@ -16,7 +16,7 @@
     </BootstrapperApplicationRef>
     <Chain>
       <PackageGroupRef Id="NetFx48Web" />
-      <MsiPackage Id="HourglassSetup" SourceFile="$(var.Hourglass.Setup.TargetPath)">
+      <MsiPackage Id="HourglassSetup" Name="HourglassSetup" SourceFile="$(var.Hourglass.Setup.TargetPath)">
         <!-- Pass this selection down to the Hourglass.Setup msi -->
         <MsiProperty Name="APPLICATIONFOLDER" Value="[InstallFolder]" />
       </MsiPackage>
